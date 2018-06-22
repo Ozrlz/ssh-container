@@ -4,7 +4,10 @@ It creates a container based on ubuntu and exposes port 22 to allow ssh conectio
 
 # How to use it
 * $ docker container image build . -t sshd:1.0
-* $ docker container run -it --name sshd sshd:1.0
+* $ docker container run -it -p 9871:22 --name sshd sshd:1.0
+
+Then, to connect to it
+* $ ssh coco01@ip -p 9871
 
 # IMPORTANT
 
