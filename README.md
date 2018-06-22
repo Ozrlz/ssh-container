@@ -3,8 +3,8 @@ This repo is for the intro to linux course.
 It creates a container based on ubuntu and exposes port 22 to allow ssh conections.
 
 # How to use it
-$ docker container image build . -t sshd:1.0
-$ docker container run -it --name sshd sshd:1.0
+* $ docker container image build . -t sshd:1.0
+* $ docker container run -it --name sshd sshd:1.0
 
 # IMPORTANT
 
